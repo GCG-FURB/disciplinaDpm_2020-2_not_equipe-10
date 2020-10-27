@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3ac7ff0dad023e0b68a98575ca736467
+labels:
+- gvh
+- gvh_version-0.0.0
+- gvhp_exportpath-GoogleMaps/Examples/03_MapsStyling/Materials/Future/Terrain/future_ground.mat
+timeCreated: 1516636872
+licenseType: Pro
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData:
+  assetBundleName:
+  assetBundleVariant:

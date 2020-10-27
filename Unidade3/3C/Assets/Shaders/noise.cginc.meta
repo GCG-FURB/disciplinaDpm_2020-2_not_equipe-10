@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1d2660f3a6a8962bc834ceb6bcdd04d2
+labels:
+- gvh
+- gvh_version-0.0.0
+- gvhp_exportpath-GoogleMaps/Examples/03_MapsStyling/Shaders/noise.cginc
+timeCreated: 1515989918
+licenseType: Pro
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  userData:
+  assetBundleName:
+  assetBundleVariant:

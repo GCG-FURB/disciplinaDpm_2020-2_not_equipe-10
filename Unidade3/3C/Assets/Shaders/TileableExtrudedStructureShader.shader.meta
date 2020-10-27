@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 046b1bf6a3c3a748cb801cfc5d1c1ef7
+labels:
+- gvh
+- gvh_version-0.0.0
+- gvhp_exportpath-GoogleMaps/Examples/03_MapsStyling/Shaders/TileableExtrudedStructureShader.shader
+timeCreated: 1515779176
+licenseType: Pro
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  userData:
+  assetBundleName:
+  assetBundleVariant:

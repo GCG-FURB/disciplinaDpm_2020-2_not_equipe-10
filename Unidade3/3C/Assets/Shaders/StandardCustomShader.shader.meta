@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b988e6d3b2ff9d42d9c321ad158c2d62
+labels:
+- gvh
+- gvh_version-0.0.0
+- gvhp_exportpath-GoogleMaps/Examples/03_MapsStyling/Shaders/StandardCustomShader.shader
+timeCreated: 1517218018
+licenseType: Pro
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  userData:
+  assetBundleName:
+  assetBundleVariant:

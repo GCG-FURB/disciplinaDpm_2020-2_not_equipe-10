@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8522c5123c6c89fdf9a0566dd9b30edf
+labels:
+- gvh
+- gvh_version-0.0.0
+- gvhp_exportpath-GoogleMaps/Examples/03_MapsStyling/Shaders/NoiseBlendedStandardMaterial.shader
+timeCreated: 1515990446
+licenseType: Pro
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  userData:
+  assetBundleName:
+  assetBundleVariant:

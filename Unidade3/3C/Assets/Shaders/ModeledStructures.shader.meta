@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 91f7049565db808c8a3c147d3c164e56
+labels:
+- gvh
+- gvh_version-0.0.0
+- gvhp_exportpath-GoogleMaps/Examples/03_MapsStyling/Shaders/ModeledStructures.shader
+timeCreated: 1518078552
+licenseType: Pro
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  userData:
+  assetBundleName:
+  assetBundleVariant:
