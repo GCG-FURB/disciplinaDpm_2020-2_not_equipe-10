@@ -40,13 +40,21 @@ public class Syncronized : MonoBehaviour
         }
     }
 
-    public void SaveLocaly(Pessoa p){
-         var path = @"C:\\Users\\Public\\UnityTeste.txt";
+        public void SaveLocaly(Pessoa p){
+        var path = "";
 
-            string text = p.Nome + ";" + p.Idade;
-            byte[] data = Encoding.ASCII.GetBytes(text);
+        if (SystemInfo.deviceType == DeviceType.Desktop)
+        {
+            path = @"C:\\Users\\Public\\UnityTeste.txt";
+        }else{
+         // android
+            path = Application.persistentDataPath + "/save.txt";
+        }
 
-            File.WriteAllBytes(path, data);
+        string text = p.Nome + ";" + p.Idade;
+        byte[] data = Encoding.ASCII.GetBytes(text);
+
+        File.WriteAllBytes(path, data);
     }
 
 }
