@@ -45,7 +45,7 @@ public class Syncronized : MonoBehaviour
 
         if (SystemInfo.deviceType == DeviceType.Desktop)
         {
-            path = @"C:\\Users\\Public\\UnityTeste.txt";
+            path = @"C:\\Temp\\UnityTeste.txt";
         }else{
          // android
             path = Application.persistentDataPath + "/save.txt";
