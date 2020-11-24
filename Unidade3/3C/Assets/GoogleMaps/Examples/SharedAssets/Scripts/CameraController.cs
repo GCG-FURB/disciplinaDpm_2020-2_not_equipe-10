@@ -16,6 +16,9 @@ namespace Google.Maps.Examples.Shared {
     /// <summary>
     /// Event triggered when the <see cref="Camera"/> moves, passing back the amount moved.
     /// </summary>
+
+     private Rigidbody rb;
+
     [Serializable]
     public class MoveEvent : UnityEvent<Vector3> {}
 
@@ -80,10 +83,19 @@ namespace Google.Maps.Examples.Shared {
       InitializeAzimuthAndInclination();
     }
 
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
     private void Update() {
+
+      Vector3 tilt = Input.acceleration;
+   
       // Determine which keys are currently being pressed.
-      bool pressingW = Input.GetKey(KeyCode.W);
-      bool pressingS = Input.GetKey(KeyCode.S);
+      bool pressingW = true;
+      bool pressingS = true;
+
       bool pressingA = Input.GetKey(KeyCode.A);
       bool pressingD = Input.GetKey(KeyCode.D);
       bool pressingQ = Input.GetKey(KeyCode.Q);
@@ -103,8 +115,8 @@ namespace Google.Maps.Examples.Shared {
       }
 
       // Convert key presses to directions of movement and rotation.
-      float xInput = pressingD ? 1 : pressingA ? -1 : 0;
-      float yInput = pressingE ? 1 : pressingQ ? -1 : 0;
+      float xInput = tilt.x;
+      float yInput = tilt.y;
       float zInput = pressingW ? 1 : pressingS ? -1 : 0;
       float rotX = pressingDown ? 1 : pressingUp ? -1 : 0;
       float rotY = pressingRight ? 1 : pressingLeft ? -1 : 0;
