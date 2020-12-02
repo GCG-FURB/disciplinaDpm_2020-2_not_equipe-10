@@ -19,7 +19,13 @@ namespace Google.Maps.Examples.Shared {
 
      private Rigidbody rb;
 
-    [Serializable]
+      public float xInput;
+      public float yInput;
+      public float zInput;
+      public float rotX;
+      public float rotY;
+      public float rotZ;
+
     public class MoveEvent : UnityEvent<Vector3> {}
 
     [Tooltip("Movement speed when pressing movement keys (WASD for panning, QE for up/down).")]
@@ -115,11 +121,9 @@ namespace Google.Maps.Examples.Shared {
       }
 
       // Convert key presses to directions of movement and rotation.
-      float xInput = tilt.x;
-      float yInput = tilt.y;
-      float zInput = pressingW ? 1 : pressingS ? -1 : 0;
-      float rotX = pressingDown ? 1 : pressingUp ? -1 : 0;
-      float rotY = pressingRight ? 1 : pressingLeft ? -1 : 0;
+       rotX = tilt.x;
+       rotY =  tilt.y;
+       rotZ = tilt.z;
 
       // Apply movement. We skip this if there is no movement this frame.
       Vector3 positionBefore = transform.position;
