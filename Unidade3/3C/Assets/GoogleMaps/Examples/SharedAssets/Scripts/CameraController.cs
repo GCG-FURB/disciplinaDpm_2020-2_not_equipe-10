@@ -123,7 +123,7 @@ namespace Google.Maps.Examples.Shared {
       // Convert key presses to directions of movement and rotation.
        rotX = tilt.x;
        rotY =  tilt.y;
-       rotZ = tilt.z;
+       zInput = 1;
 
       // Apply movement. We skip this if there is no movement this frame.
       Vector3 positionBefore = transform.position;
